@@ -19,7 +19,9 @@ body shape either way.
 curl -i http://localhost:8000/health
 ```
 
-```json
+```text
+HTTP/1.1 503 Service Unavailable
+...
 {"detail":{"status":"unhealthy","dependencies":{"postgres":"unhealthy","redis":"unhealthy","vector_db":"healthy"},"safety_events_last_hour":0,"timestamp":"2026-09-30T04:33:25.545205"}}
 ```
 
